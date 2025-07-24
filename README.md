@@ -1,99 +1,99 @@
-# 🧪 Experiment 2 - Data Types and Operators in C++
+# EXPERIMENT-5: Decision Making Statements in C++
 
-## 🎯 Aim:
-To study and implement:
-- Various data types in C++
-- Usage of arithmetic, relational, and logical operators
-- Behavior of expressions using different operators and data types
+Name: Pal Jain
 
----
+PRN: 24070123067
 
-## 🧠 Theory:
+ENTC A3
 
-In C++, **data types** define the nature of data that a variable can hold. **Operators** are symbols that perform operations on data values and variables.
+Title: Decision Making in C++
 
-### ➤ 1. Data Types in C++
+In programming, decision making allows a program to choose different paths based on conditions. It's similar to how we take decisions in daily life — for example, “If it's raining, take an umbrella. Otherwise, don't.”
 
-| Data Type | Description                     | Example        |
-|-----------|---------------------------------|----------------|
-| `int`     | Stores whole numbers             | 5, -10, 1000   |
-| `float`   | Stores decimal values (6 digits precision) | 3.14, 0.5 |
-| `double`  | Stores larger decimal values (15 digits precision) | 2.718281828459045 |
-| `char`    | Stores a single character        | 'A', 'z'       |
-| `bool`    | Stores true or false             | `true`, `false` |
+C++ provides several decision control structures that help implement logic in programs. These include if, if-else, else-if, nested conditions, and switch-case. These constructs make programs smarter by allowing them to respond differently to different inputs or situations.
 
-Each variable in C++ must be declared with a type before it can be used.
+# Types of Decision Making in C++
+1. if Statement
+Executes a block of code only if a given condition is true.
 
-### ➤ 2. Operators in C++
+2. if-else Statement
+Runs one block if the condition is true, and another if it's false.
 
-#### ➤ Arithmetic Operators:
-Used to perform basic mathematical operations.
+3. else-if Ladder
+Used when multiple conditions need to be checked one after another.
 
-| Operator | Description        | Example      |
-|----------|--------------------|--------------|
-| `+`      | Addition            | `a + b`      |
-| `-`      | Subtraction         | `a - b`      |
-| `*`      | Multiplication      | `a * b`      |
-| `/`      | Division            | `a / b`      |
-| `%`      | Modulo (remainder)  | `a % b`      |
+4. Nested if
+An if condition inside another if. Used when one condition depends on another.
 
-#### ➤ Relational Operators:
-Used to compare two values and return a boolean result.
+5. switch-case
+Best for fixed options (like menu choices or operator-based programs). Compares a variable with several constant cases and executes the matching one.
 
-| Operator | Description         | Example     |
-|----------|---------------------|-------------|
-| `==`     | Equal to             | `a == b`    |
-| `!=`     | Not equal to         | `a != b`    |
-| `<`      | Less than            | `a < b`     |
-| `>`      | Greater than         | `a > b`     |
-| `<=`     | Less than or equal   | `a <= b`    |
-| `>=`     | Greater than or equal| `a >= b`    |
+# Program on decision making
+1. Even or Odd Checker
+Checks if a number is divisible by 2. Uses the modulus operator and if-else condition to determine and display whether the number is even or odd.
 
-#### ➤ Logical Operators:
-Used for combining two or more conditions.
+Sample Output:
+Enter the number: 78
+The given number is even number.
 
-| Operator | Description          | Example               |
-|----------|----------------------|------------------------|
-| `&&`     | Logical AND           | `(a > 5 && b < 10)`   |
-| `||`     | Logical OR            | `(a > 5 || b < 10)`   |
-| `!`      | Logical NOT           | `!(a == b)`           |
+2. Vowel or Consonant Identifier
+Accepts a character input and checks whether it's a vowel using either if-else or a switch case. If not a vowel, it’s treated as a consonant.
 
----
+Sample Output:
+Enter a character. p The given character is a consonant.
 
-## ⚙️ Procedure:
+3. Largest of Three Numbers
+Takes three numbers and uses else-if ladder or nested if to compare and determine the largest among them.
 
-1. Open your preferred IDE or text editor and create a new C++ file.
-2. Use `#include <iostream>` and `using namespace std;` at the beginning.
-3. Declare variables of different data types (e.g., `int`, `float`, `char`, `bool`).
-4. Initialize values and perform operations using:
-   - Arithmetic operators
-   - Relational operators
-   - Logical operators
-5. Use `cout` statements to print the results of expressions.
-6. Compile and run the program to observe the output.
+Sample Output:
+Enter the value of a. 67
+Enter the value of b. 89
+Enter the value of c. 90
+c is the largest number.
 
----
+4. Simple Calculator
+Implements a calculator using a switch statement. Based on the operator entered (+, -, *, /), it performs the respective arithmetic operation.
 
-## 🔍 Learning Outcomes:
+Sample Output:
+Enter an operator (+, -, *, /): /
+Enter two numbers: 10 2
+10 / 2 = 5
 
-- Learned about different data types and their memory usage
-- Applied various arithmetic and relational operators
-- Observed how logical operators evaluate conditions
-- Strengthened understanding of how C++ evaluates expressions
+5. Switch case with break statements (fruit shop Program)
+Menu-driven application using switch-case. Displays a fruit item's cost based on the user's numeric choice. A default message is shown for invalid selections.
 
----
+Sample Output:
+Welcome to the Fruit Shop!
+1. Apple
+2. Banana
+3. Mango
+4. Grapes
+5. Orange
+6. Strawberry
+7. Watermelon
+Enter the number of the fruit you want to buy: 7
+Watermelon costs ₹60 per piece.
 
-## 📌 Key Concepts Covered:
+# Algorithms
+1. Even or Odd Checker
+Take input as a number n.
+Check if n % 2 == 0.
+If true, print “Even”.
+Else, print “Odd”.
 
-- Data types: `int`, `float`, `char`, `bool`
-- Variable declaration and initialization
-- Operator usage: arithmetic, relational, logical
-- Expression evaluation
 
----
+3. Vowel or Consonant
+Take a character input.
+Convert it to lowercase (if needed).
+If it is a, e, i, o, or u, print “Vowel”.
+Else, print “Consonant”.
 
-## 📝 Experiment Summary:
 
-This experiment provided hands-on exposure to **how C++ handles data** and **how operators function** on different variables. From mathematical calculations to comparing values and making logical decisions, understanding data types and operators is crucial for writing clear, correct, and efficient C++ programs.
+5. Largest of Three Numbers
+Take input: a, b, and c.
+If a > b and a > c, print “a is largest”.
+Else if b > c, print “b is largest”.
+Else, print “c is largest”.
 
----
+# Conclusion
+Decision-making statements are the backbone of logical flow in C++ programs. Whether it's a basic check using if, evaluating multiple paths using else-if, or using switch for cleaner alternatives, these tools make your programs flexible and responsive. The examples shared cover common scenarios and form a strong foundation for real-world programming logic.
